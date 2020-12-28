@@ -39,15 +39,36 @@ a{
 ul{
     list-style-type: none;
 }
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--Lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
 
-/*-----------------navBAr-------------------*/
+button{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+/*-----------------navBar-------------------*/
 
 .nav{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 15vh;
+    min-height: 10vh;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 .nav .nav-menu {
 
@@ -68,6 +89,10 @@ ul{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
 }
 
 .nav .nav-items{
@@ -110,6 +135,55 @@ ul{
     color:#a1c4cf;
 }
 /* -------x--------NavBar--------x-----------*/
+
+/* ----------------Main Content-------------------*/
+
+/* ----------------SiteTitle--------------------*/
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding:10rem 0 0 ;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* -------x--------SiteTitle--------x-----------*/
+
+/*-----------------Carousel --------------------*/
+main .blog{
+    background: url('../assets/Abract01.png') no-repeat right;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ---------x------Carousel-----------x---------*/
+
+
+/* -------x---------Main Content----------x--------*/
+
+
+
+
 
 /*    Responsive less or equal to 750px    */
 
